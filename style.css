@@ -6,6 +6,7 @@
   font-family: 'Onest';
   font-weight: normal;
   src: url('/fonts/WOFF/Onest-Regular.woff') format('woff'),
+    url('/fonts/WOFF2/Onest-Regular.woff2') format('woff2'),
     url('/fonts/TTF/Onest-Regular.ttf') format('truetype');
 }
 
@@ -13,5 +14,6 @@
   font-family: 'Onest';
   font-weight: 700;
   src: url('/fonts/WOFF/Onest-Bold.woff') format('woff'),
+    url('/fonts/WOFF2/Onest-Bold.woff2') format('woff2'),
     url('/fonts/TTF/Onest-Bold.ttf') format('truetype');
 }
