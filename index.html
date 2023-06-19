@@ -4,865 +4,213 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/img/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>EasyLife</title>
   </head>
-  <body class="bg-purple-300">
-    <div class="container mx-auto px-5 bg-purple-300">
-      <!-- Ваш контент здесь -->
-
-      <header class="flex place-content-between py-5 text-xl sm:text-2xl">
-        <div class="flex items-center">
-          <img class="sm:w-10" src="/img/logo.svg" alt="" />
-          <span class="pl-1 font-bold text-customGreen">EasyLife</span>
-        </div>
-        <div class="flex">
-          <a href="/index.html"
-            ><img
-              class="w-7 mr-3 sm:w-10"
+  <body class="max-w-[2000px] mx-auto bg-purple-300">
+    <nav class="mx-auto p-4">
+      <div class="flex items-center justify-between">
+        <a href="#" class="flex items-center">
+          <img src="/img/logo.svg" alt="Логотип" class="w-8 h-8 mr-2" />
+          <span class="text-xl font-bold text-customGreen">EasyLife</span>
+        </a>
+        <div class="flex items-center space-x-4">
+          <a href="/index.html" class="flex items-center">
+            <img
               src="/img/languageRU-green.svg"
-              alt=""
-          /></a>
-          <a href="/english.html"
-            ><img class="w-7 sm:w-10" src="/img/languageEN-white.svg" alt="2"
-          /></a>
+              alt="Instagram"
+              class="w-6 h-6"
+            />
+          </a>
+          <a href="/english.html" class="flex items-center">
+            <img
+              src="/img/languageEN-white.svg"
+              alt="Facebook"
+              class="w-6 h-6"
+            />
+          </a>
         </div>
-      </header>
+      </div>
+    </nav>
 
-      <div id="wrapper" class="h-screen">
+    <main class="py-8 px-4 md:px-8 lg:px-16">
+      <div class="max-w-[2000px] mx-auto">
         <h1
-          class="font-onest font-700 text-white font-bold text-2xl sm:text-4xl md:text-5xl"
+          class="font-onest text-white text-2xl md:text-4xl lg:text-5xl font-bold text-left"
         >
           Устали искать информацию о жизни в Турции в разных источниках?
         </h1>
         <div
-          class="flex h-1/3 items-center justify-center sm:justify-around sm:mt-5 md:justify-around md:mt-10 lg:mt-28"
+          class="flex md:flex-row items-start justify-center space-y-4 md:space-y-0 md:space-x-8 mb-8 lg:justify-evenly"
         >
-          <div class="hidden lg:inline lg:w-1/4 lg:h-auto relative">
-            <img class="xl:w-80 xl:mt-5" src="/img/girl-header.png" alt="" />
+          <div class="hidden lg:inline relative">
+            <img
+              src="/img/girl-header.png"
+              alt="Девушка с телефоном"
+              class="hidden lg:block lg:w-64"
+            />
             <div
               class="absolute -bottom-6 bg-purple-300 w-full h-14 blur-md"
             ></div>
           </div>
 
           <img
-            class="w-48 h-auto sm:w-72 sm:h-64 md:w-80 md:h-72 lg:w-1/4 lg:h-auto lg:-mt-20 xl:w-72"
-            src="/img/phones_header.png"
-            alt=""
+            src="/img/phones_header_mobile.png"
+            alt="Телефоны"
+            class="w-52 z-10 -mr-12 lg:w-64"
           />
-
-          <img
-            class="w-1/2 h-auto sm:w-1/3 sm:h-auto lg:w-1/4"
-            src="/img/family_header.png"
-            alt=""
-          />
+          <img src="/img/family_header.png" alt="Семья" class="w-60 lg:w-64" />
         </div>
         <div
-          class="flex flex-col mx-auto gap-5 sm:w-1/2 sm:mt-5 md:flex md:flex-row md:justify-center md:w-1/3 md:mt-16 lg:flex lg:flex-col lg:w-1/4 lg:-mt-8 xl:w-72"
+          class="flex flex-col items-center justify-between space-y-4 lg:flex lg:-mt-32 lg:z-10"
         >
           <a
-            href="https://apps.apple.com/kz/app/easylife-turkiye/id1671635384"
-            target="_blank"
-            ><img src="/img/DownLoadAppstoreBtn.png" alt=""
-          /></a>
-
+            href="/"
+            class="text-white font-onest bg-btnPurple hover:bg-btnPurple/90 focus:ring-4 focus:outline-none rounded-lg text-sm px-5 py-2.5 text-center shadow-lg shadow-neutral-500 inline-flex items-center mr-2 mb-2"
+          >
+            <svg
+              class="w-5 h-5 mr-2 -ml-1"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fab"
+              data-icon="apple"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
+            >
+              <path
+                fill="currentColor"
+                d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"
+              ></path>
+            </svg>
+            Скачать в AppStore
+          </a>
           <a
-            href="https://play.google.com/store/apps/details?id=com.easy_life.easy_life"
-            target="_blank"
-            ><img src="/img//DownLoadGooglePlayBtn.png" alt=""
-          /></a>
+            href="/"
+            class="text-white font-onest bg-btnPurple hover:bg-btnPurple/90 focus:ring-4 focus:outline-none rounded-lg text-[13px] px-5 py-2.5 text-center shadow-lg shadow-neutral-500 inline-flex items-center mr-2 mb-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="w-5 h-5 mr-2 -ml-1"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z"
+              />
+            </svg>
+            Скачать в GooglePlay
+          </a>
         </div>
       </div>
+    </main>
 
-      <!-- section 2 page -->
-      <section>
-        <div class="relative">
-          <div class="flex justify-center relative xl:flex xl:justify-center">
-            <img
-              class="w-1/2 h-auto xl:w-1/3"
-              src="/img/girl-in-orange-without-bg.png"
-              alt=""
-            />
-            <div
-              class="absolute -bottom-4 bg-purple-300 w-1/2 h-8 blur-sm"
-            ></div>
-          </div>
-
-          <img
-            data-aos="fade-down-right"
-            class="absolute -top-12 left-0 sm:w-1/2 xl:w-1/3"
-            src="/img/1-question.svg"
-            alt=""
-          />
-          <img
-            data-aos="fade-up-right"
-            class="absolute top-1/4 left-0 mt-6 sm:w-1/2 sm:mt-12 xl:w-1/3"
-            src="/img/2-question.svg"
-            alt=""
-          />
-          <img
-            data-aos="fade-up-right"
-            class="absolute bottom-0 left-0 sm:w-1/2 xl:w-1/3"
-            src="/img/3-question.svg"
-            alt=""
-          />
-          <img
-            data-aos="fade-up-left"
-            class="absolute top-0 right-0 sm:w-1/2 xl:w-1/3"
-            src="/img/4-question.svg"
-            alt=""
-          />
-          <img
-            data-aos="fade-left"
-            class="absolute bottom-12 right-0 sm:w-1/2 md:bottom-32 xl:w-1/3"
-            src="/img/5-question.svg"
-            alt=""
-          />
-        </div>
-        <div class="mt-3">
-          <h1
-            class="font-onest text-white text-center text-xl font-bold leading-5 mt-5 sm:text-4xl lg:text-5xl"
-          >
-            Абсолютно все ответы на эти вопросы собраны в одном месте
-          </h1>
-        </div>
-        <div
-          class="mt-6 w-1/2 flex flex-col mx-auto gap-5 sm:w-1/2 sm:mt-5 md:flex md:flex-row md:justify-center md:w-1/3 md:mt-8"
-        >
-          <a
-            href="https://apps.apple.com/kz/app/easylife-turkiye/id1671635384"
-            target="_blank"
-            ><img src="/img/DownLoadAppstoreBtn.png" alt=""
-          /></a>
-
-          <a
-            href="https://play.google.com/store/apps/details?id=com.easy_life.easy_life"
-            target="_blank"
-            ><img src="/img//DownLoadGooglePlayBtn.png" alt=""
-          /></a>
-        </div>
-        <div class="mt-3 lg:flex lg:flex-row lg:justify-center">
-          <h1
-            class="font-onest text-white text-center text-base leading-5 sm:text-xl lg:text-2xl"
-          >
-            Надежное и удобное приложение для иностранцев в Турции
-          </h1>
-        </div>
-      </section>
-
-      <!-- section 3 page Mobile-->
-      <section class="h-auto mt-10 lg:hidden">
-        <div class="mt-3">
-          <h1
-            class="font-onest text-white text-center text-2xl font-bold leading-7 sm:text-4xl lg:text-5xl"
-          >
-            3 раздела приложения <br />
-            <span class="text-purple-800">EasyLife</span> - ваш гид по Турции
-          </h1>
-        </div>
-
-        <div class="mt-10">
-          <h1
-            class="font-onest text-purple-800 text-end text-2xl font-bold leading-7 sm:text-4xl lg:text-5xl"
-          >
-            EasyLife City
-          </h1>
-        </div>
-        <div class="">
-          <h1
-            class="font-onest text-white text-end text-2xl font-bold leading-7 sm:text-4xl lg:text-5xl"
-          >
-            Найди лучшие места
-          </h1>
-        </div>
-
-        <div class="flex justify-between">
-          <img class="w-1/2" src="/img/section3__iphone1_shadow.png" alt="" />
-          <div class="mt-6 w-1/2 flex flex-col gap-5 sm:w-1/2 sm:mt-5">
-            <a
-              href="https://apps.apple.com/kz/app/easylife-turkiye/id1671635384"
-              target="_blank"
-              ><img src="/img/DownLoadAppstoreBtn.png" alt=""
-            /></a>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.easy_life.easy_life"
-              target="_blank"
-              ><img src="/img//DownLoadGooglePlayBtn.png" alt=""
-            /></a>
-
-            <img id="mobFirst" class="w-1/2" src="/img/read-more.svg" alt="" />
-          </div>
-        </div>
-
-        <div class="mt-10">
-          <h1
-            class="font-onest text-purple-800 text-end text-2xl font-bold leading-7 sm:text-4xl lg:text-5xl"
-          >
-            EasyLife Market
-          </h1>
-        </div>
-        <div class="">
-          <h1
-            class="font-onest text-white text-end text-2xl font-bold leading-7 sm:text-4xl lg:text-5xl"
-          >
-            Продавай и покупай
-          </h1>
-        </div>
-
-        <div class="flex justify-between">
-          <img class="w-1/2" src="/img/section3__iphone2_shadow.png" alt="" />
-          <div class="mt-6 w-1/2 flex flex-col gap-5 sm:w-1/2 sm:mt-5">
-            <a
-              href="https://apps.apple.com/kz/app/easylife-turkiye/id1671635384"
-              target="_blank"
-              ><img src="/img/DownLoadAppstoreBtn.png" alt=""
-            /></a>
-
-            <a
-              href="https://play.google.com/store/apps/details?id=com.easy_life.easy_life"
-              target="_blank"
-              ><img src="/img//DownLoadGooglePlayBtn.png" alt=""
-            /></a>
-
-            <img id="mobSecond" class="w-1/2" src="/img/read-more.svg" alt="" />
-          </div>
-        </div>
-
-        <div class="mt-10">
-          <h1
-            class="font-onest text-purple-800 text-end text-2xl font-bold leading-7 sm:text-4xl lg:text-5xl"
-          >
-            EasyLife Homes
-          </h1>
-        </div>
-        <div class="">
-          <h1
-            class="font-onest text-white text-end text-2xl font-bold leading-7 sm:text-4xl lg:text-5xl"
-          >
-            Будь в курсе
-          </h1>
-        </div>
-
-        <div class="flex justify-between">
-          <img class="w-1/2" src="/img/section3__iphone3_shadow.png" alt="" />
-          <div class="mt-6 w-1/2 flex flex-col gap-5 sm:w-1/2 sm:mt-5">
-            <a
-              href="https://apps.apple.com/kz/app/easylife-turkiye/id1671635384"
-              target="_blank"
-              ><img src="/img/DownLoadAppstoreBtn.png" alt=""
-            /></a>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.easy_life.easy_life"
-              target="_blank"
-              ><img src="/img//DownLoadGooglePlayBtn.png" alt=""
-            /></a>
-
-            <img id="mobThird" class="w-1/2" src="/img/read-more.svg" alt="" />
-          </div>
-        </div>
-      </section>
-
-      <!-- section 3 page Desktop-->
-      <section class="hidden sm:hidden md:hidden lg:block lg:h-auto lg:mt-10">
-        <div class="mt-3">
-          <h1
-            class="font-onest text-white text-center text-2xl font-bold leading-7 sm:text-4xl lg:text-5xl"
-          >
-            3 раздела приложения <br />
-            <span class="text-green-400">EasyLife</span> - ваш гид по Турции
-          </h1>
-        </div>
-        <div class="mt-10 flex justify-between text-center">
-          <div class="lg:flex lg:flex-col lg:justify-center lg:w-1/3">
-            <div class="">
-              <h1 class="font-onest text-purple-800 font-bold lg:text-sm">
-                EasyLife City
-              </h1>
-            </div>
-            <div class="">
-              <h1 class="font-onest text-white text-2xl font-bold lg:text-3xl">
-                Найди лучшие <br />
-                места
-              </h1>
-            </div>
-            <div class="mt-5">
-              <img class="" src="/img/section3__iphone1_shadow.png" alt="" />
-            </div>
-          </div>
-          <div class="w-1/3">
-            <div class="">
-              <h1 class="font-onest text-purple-800 font-bold lg:text-sm">
-                EasyLife Market
-              </h1>
-            </div>
-            <div class="">
-              <h1 class="font-onest text-white text-2xl font-bold lg:text-3xl">
-                Продавай <br />
-                и покупай
-              </h1>
-            </div>
-            <div class="mt-5">
-              <img class="" src="/img/section3__iphone2_shadow.png" alt="" />
-            </div>
-          </div>
-          <div class="w-1/3">
-            <div class="">
-              <h1 class="font-onest text-purple-800 font-bold lg:text-sm">
-                EasyLife Homes
-              </h1>
-            </div>
-            <div class="">
-              <h1 class="font-onest text-white font-bold lg:text-3xl py-4">
-                Будь в курсе
-              </h1>
-            </div>
-            <div class="mt-5">
-              <img class="" src="/img/section3__iphone3_shadow.png" alt="" />
-            </div>
-          </div>
-        </div>
-
-        <div class="flex justify-around">
-          <div class="">
-            <img id="deskFirst" class="" src="/img/read-more.svg" alt="" />
-          </div>
-          <div class="">
-            <img id="deskSecond" class="" src="/img/read-more.svg" alt="" />
-          </div>
-          <div class="">
-            <img id="deskThird" class="" src="/img/read-more.svg" alt="" />
-          </div>
-        </div>
-
-        <div class="flex justify-center gap-x-5 mx-auto mt-5">
-          <a
-            class="w-1/5"
-            href="https://apps.apple.com/kz/app/easylife-turkiye/id1671635384"
-            target="_blank"
-            ><img src="/img/DownLoadAppstoreBtn.png" alt=""
-          /></a>
-          <a
-            class="w-1/5"
-            href="https://play.google.com/store/apps/details?id=com.easy_life.easy_life"
-            target="_blank"
-            ><img src="/img/DownLoadGooglePlayBtn.png" alt=""
-          /></a>
-        </div>
-      </section>
-
-      <!-- section 4 page Mobile -->
-      <section class="h-auto lg:hidden">
-        <p
-          id="citySectionMob"
-          class="font-onest text-lg text-gray-600 py-5 sm:text-xl md:text-2xl"
-        >
-          <span class="text-purple-800 font-bold">EasyLife City</span> -
-          структурированный геоинформационный справочник объектов интереса, от
-          магазинов до музеев и достопримечательностей.
-        </p>
-        <img
-          class="mb-5 sm:mx-auto"
-          src="/img/section4_iphones_shadow.png"
-          alt=""
-        />
-
-        <div class="flex mb-2">
-          <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-          <span class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl"
-            >Находи любое место (магазин, ресторан, достопримечательность или
-            жилой комплекс) по названию, категории или рядом с тобой.</span
-          >
-        </div>
-        <div class="flex mb-2">
-          <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-          <span class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl"
-            >Ищи на карте и прокладывай маршрут.</span
-          >
-        </div>
-
-        <div class="flex mb-2">
-          <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-          <span class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl"
-            >Читай и оставляй отзывы, ставь оценки, рекомендуй друзьям и
-            знакомым, делись точкой прямо из приложения.</span
-          >
-        </div>
-        <div class="flex">
-          <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-          <span class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl"
-            >Смотри описание и режим работы, посещай соц сети заведения, пиши
-            сообщения и звони.</span
-          >
-        </div>
-      </section>
-
-      <!-- section 4 page Desktop -->
-      <section class="hidden lg:block lg:my-10">
-        <div class="flex justify-start">
-          <p
-            id="citySectionDesk"
-            class="font-onest text-lg text-gray-600 py-5 sm:text-xl md:text-2xl lg:text-3xl"
-          >
-            <span class="text-purple-800 font-bold">EasyLife City</span> -
-            структурированный <br />
-            геоинформационный справочник объектов интереса, <br />
-            от магазинов до музеев и достопримечательностей.
-          </p>
-        </div>
-        <div class="flex justify-between">
-          <div class="lg:w-1/2">
-            <img class="" src="/img/section4_iphones_shadow.png" alt="" />
-            <div class="flex">
-              <a
-                href="https://apps.apple.com/kz/app/easylife-turkiye/id1671635384"
-                class="w-1/3 mr-5"
-                target="_blank"
-                ><img src="/img/DownLoadAppstoreBtn.png" alt=""
-              /></a>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.easy_life.easy_life"
-                class="w-1/3"
-                target="_blank"
-                ><img src="/img/DownLoadGooglePlayBtn.png" alt=""
-              /></a>
-            </div>
-          </div>
-
-          <div class="lg:w-1/2">
-            <img src="/img/section4_image.png" alt="" />
-            <div class="flex mb-2">
-              <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-              <span
-                class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl lg:text-lg"
-                >Находи любое место (магазин, ресторан, достопримечательность
-                или жилой комплекс) по названию, категории или рядом с
-                тобой.</span
-              >
-            </div>
-            <div class="flex mb-2">
-              <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-              <span
-                class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl lg:text-lg"
-                >Ищи на карте и прокладывай маршрут.</span
-              >
-            </div>
-            <div class="flex mb-2">
-              <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-              <span
-                class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl lg:text-lg"
-                >Читай и оставляй отзывы, ставь оценки, рекомендуй друзьям и
-                знакомым, делись точкой прямо из приложения.</span
-              >
-            </div>
-            <div class="flex mb-2">
-              <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-              <span
-                class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl lg:text-lg"
-                >Смотри описание и режим работы, посещай соц сети заведения,
-                пиши сообщения и звони.</span
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- section 5 page Mobile -->
-      <section class="h-auto lg:hidden">
-        <p
-          id="marketSectionMob"
-          class="font-onest text-lg text-gray-600 py-5 sm:text-xl md:text-2xl"
-        >
-          <span class="text-purple-800 font-bold">EasyLife Market</span> -
-          система подачи частных объявлений, структурированная по рубрикам.
-        </p>
-        <img
-          class="mb-5 sm:mx-auto"
-          src="/img/section5_iphones_shadows.png"
-          alt=""
-        />
-
-        <div class="flex mb-2">
-          <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-          <span class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl"
-            >Размещай бесплатные объявления и их увидят тысячи человек.</span
-          >
-        </div>
-        <div class="flex mb-2">
-          <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-          <span class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl"
-            >Ищи интересные тебе товары по рубрикам и цене.</span
-          >
-        </div>
-
-        <div class="flex mb-2">
-          <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-          <span class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl"
-            >Делись объявлениями с друзьями прямо из приложения.</span
-          >
-        </div>
-        <div class="flex">
-          <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-          <span class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl"
-            >Переписывайся и торгуйся с продавцом на родном языке.
-            Автоматический перевод сообщений.</span
-          >
-        </div>
-      </section>
-
-      <!-- section 5 page Desktop -->
-      <section class="hidden lg:block lg:my-10">
-        <div class="flex justify-start">
-          <p
-            id="marketSectionDesk"
-            class="font-onest text-lg text-gray-600 py-5 sm:text-xl md:text-2xl lg:text-3xl"
-          >
-            <span class="text-purple-800 font-bold">EasyLife Market</span> -
-            система подачи частных объявлений, <br />
-            структурированная по рубрикам.
-          </p>
-        </div>
-        <div class="flex justify-between">
-          <div class="lg:w-1/2">
-            <img class="" src="/img/section5_iphones_shadows.png" alt="" />
-            <div class="flex">
-              <a
-                href="https://apps.apple.com/kz/app/easylife-turkiye/id1671635384"
-                class="w-1/3 mr-5"
-                target="_blank"
-                ><img src="/img/DownLoadAppstoreBtn.png" alt=""
-              /></a>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.easy_life.easy_life"
-                class="w-1/3"
-                target="_blank"
-                ><img src="/img/DownLoadGooglePlayBtn.png" alt=""
-              /></a>
-            </div>
-          </div>
-
-          <div class="lg:w-1/2">
-            <img class="mb-4" src="/img/section5_image.png" alt="" />
-            <div class="flex mb-2">
-              <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-              <span
-                class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl lg:text-lg"
-                >Размещай бесплатные объявления и их увидят тысячи
-                человек.</span
-              >
-            </div>
-            <div class="flex mb-2">
-              <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-              <span
-                class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl lg:text-lg"
-                >Ищи интересные тебе товары по рубрикам и цене.</span
-              >
-            </div>
-            <div class="flex mb-2">
-              <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-              <span
-                class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl lg:text-lg"
-                >Делись объявлениями с друзьями прямо из приложения.</span
-              >
-            </div>
-            <div class="flex mb-2">
-              <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-              <span
-                class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl lg:text-lg"
-                >Переписывайся и торгуйся с продавцом на родном языке.
-                Автоматический перевод сообщений.</span
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- section 6 page Mobile -->
-      <section class="h-auto lg:hidden">
-        <p
-          id="homesSectionMob"
-          class="font-onest text-lg text-gray-600 py-5 sm:text-xl md:text-2xl"
-        >
-          <span class="text-purple-800 font-bold">EasyLife Homes</span> - новая
-          система администрирования Жилых Комплексов в Турции.
-        </p>
-        <img
-          class="mb-5 sm:mx-auto"
-          src="/img/section6_iphones_shadows.png"
-          alt=""
-        />
-
-        <div class="flex mb-2">
-          <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-          <span class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl"
-            >Оплачивай счета за коммунальные услуги прямо из приложения.</span
-          >
-        </div>
-        <div class="flex mb-2">
-          <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-          <span class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl"
-            >Следи за новостями и событиями в твоем доме в режиме он-лайн.</span
-          >
-        </div>
-
-        <div class="flex mb-2">
-          <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-          <span class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl"
-            >Просматривай камеры видеонаблюдения прямо из приложения.</span
-          >
-        </div>
-        <div class="flex">
-          <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-          <span class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl"
-            >Получай финансовые отчеты Управляющего прямо в приложении.</span
-          >
-        </div>
-        <div class="flex">
-          <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-          <span class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl"
-            >Пиши сообщения Управляющему на родном языке и получай ответы.</span
-          >
-        </div>
-      </section>
-
-      <!-- section 6 page Desktop -->
-      <section class="hidden lg:block lg:my-10">
-        <div class="flex justify-start">
-          <p
-            id="homesSectionDesk"
-            class="font-onest text-lg text-gray-600 py-5 sm:text-xl md:text-2xl lg:text-3xl"
-          >
-            <span class="text-purple-800 font-bold">EasyLife Homes</span> -
-            новая система администрирования<br />
-            Жилых Комплексов в Турции.
-          </p>
-        </div>
-        <div class="flex justify-between">
-          <div class="lg:w-1/2">
-            <img class="" src="/img/section6_iphones_shadows.png" alt="" />
-            <div class="flex">
-              <a
-                href="https://apps.apple.com/kz/app/easylife-turkiye/id1671635384"
-                class="w-1/3 mr-5"
-                target="_blank"
-                ><img src="/img/DownLoadAppstoreBtn.png" alt=""
-              /></a>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.easy_life.easy_life"
-                class="w-1/3"
-                target="_blank"
-                ><img src="/img/DownLoadGooglePlayBtn.png" alt=""
-              /></a>
-            </div>
-          </div>
-
-          <div class="lg:w-1/2">
-            <img class="mb-4" src="/img/section5_image.png" alt="" />
-            <div class="flex mb-2">
-              <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-              <span
-                class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl lg:text-lg"
-                >Оплачивай счета за коммунальные услуги прямо из
-                приложения.</span
-              >
-            </div>
-            <div class="flex mb-2">
-              <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-              <span
-                class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl lg:text-lg"
-              >
-                Следи за новостями и событиями в твоем доме в режиме
-                он-лайн.</span
-              >
-            </div>
-            <div class="flex mb-2">
-              <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-              <span
-                class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl lg:text-lg"
-                >Просматривай камеры видеонаблюдения прямо из приложения.</span
-              >
-            </div>
-            <div class="flex mb-2">
-              <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-              <span
-                class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl lg:text-lg"
-                >Получай финансовые отчеты Управляющего прямо в
-                приложении.</span
-              >
-            </div>
-            <div class="flex mb-2">
-              <img class="self-start" src="/img/arrow-right.svg" alt="" />
-
-              <span
-                class="font-onest text-lg text-gray-600 sm:text-xl md:text-2xl lg:text-lg"
-                >Пиши сообщения Управляющему на родном языке и получай
-                ответы.</span
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="h-auto my-10 lg:mt-10">
-        <div class="flex justify-center mb-2">
-          <span class="font-onest text-white">Контакты</span>
-        </div>
-
-        <div class="flex justify-center gap-9">
-          <a href="https://www.instagram.com/easylife_turkiye/" target="_blank"
-            ><img src="/img/instagram.svg" alt=""
-          /></a>
-
-          <a
-            href="https://www.facebook.com/profile.php?id=100090170828044"
-            target="_blank"
-            ><img src="/img/facebook.svg" alt=""
-          /></a>
-        </div>
-      </section>
-
-      <!-- MODAL WINDOW START -->
+    <div
+      id="modal"
+      class="hidden fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50"
+    >
       <div
-        id="modal"
-        class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+        class="bg-modalColor rounded-lg shadow-lg overflow-hidden w-full max-w-md"
       >
-        <div
-          class="bg-purple-500 font-onest rounded-lg shadow h-1/2 m-2 flex flex-col justify-between relative sm:h-auto"
-        >
-          <div class="absolute right-0 top-0 mt-2 mr-2 lg:hidden">
-            <img
-              id="xBtnMob"
-              class="w-3 h-3 hover:cursor-pointer"
-              src="/img/x-btn.svg"
-              alt=""
-            />
+        <div class="px-2 py-4">
+          <div class="flex justify-between items-center mb-5">
+            <h2 class="text-2xl font-bold text-white">
+              Одно приложение, множество возможностей!
+            </h2>
+            <button
+              id="closeModal"
+              class="text-gray-500 hover:text-gray-700 focus:outline-none"
+              aria-label="Закрыть"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
           </div>
 
-          <h1
-            class="text-2xl font-bold text-white leading-7 px-2 pt-5 sm:text-4xl sm:px-6 lg:hidden"
-          >
-            Одно приложение, <br />
-            множество возможностей!
-          </h1>
-
-          <div
-            class="flex justify-around font-bold gap-x-5 px-2 sm:px-6 sm:mt-6 lg:hidden"
-          >
+          <div class="flex justify-around font-bold px-2">
             <div class="flex flex-col justify-around">
               <a
-                href="https://apps.apple.com/kz/app/easylife-turkiye/id1671635384"
-                target="_blank"
-                ><img src="/img/DownLoadAppstoreBtn.png" alt=""
-              /></a>
+                href="/"
+                class="text-white font-onest font-normal bg-btnPurple hover:bg-btnPurple/90 rounded-lg text-sm px-5 py-2.5 text-center shadow-lg shadow-neutral-700 inline-flex items-center mr-2 mb-2"
+              >
+                <svg
+                  class="w-5 h-5 mr-2 -ml-1"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fab"
+                  data-icon="apple"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"
+                  ></path>
+                </svg>
+                Скачать
+              </a>
 
               <a
-                href="https://play.google.com/store/apps/details?id=com.easy_life.easy_life"
-                target="_blank"
-                ><img src="/img//DownLoadGooglePlayBtn.png" alt=""
-              /></a>
+                href="/"
+                class="text-white font-onest font-normal bg-btnPurple hover:bg-btnPurple/90 focus:ring-4 focus:outline-none rounded-lg text-sm px-5 py-2.5 text-center shadow-lg shadow-neutral-700 inline-flex items-center mr-2 mb-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="currentColor"
+                  class="w-5 h-5 mr-2 -ml-1"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z"
+                  />
+                </svg>
+                Скачать
+              </a>
             </div>
-            <span class="text-base text-white sm:text-lg"
+            <span class="text-white font-medium sm:text-lg"
               >Мобильное приложение
               <span class="text-customGreen">EasyLife</span> с принципом
               <span class="text-customGreen">одного окна</span> делает жизнь
               легче. Вся необходимая информация на экране вашего телефона.</span
             >
           </div>
-          <div class="flex justify-between px-2 lg:hidden">
-            <img
-              class="w-auto h-36 sm:w-72 sm:h-64 md:w-80 md:h-72"
-              src="/img/phones_header.png"
-              alt=""
-            />
-            <img
-              class="w-48 h-36 sm:w-72 sm:h-64 md:w-80 md:h-auto lg:hidden"
-              src="/img/modal-image.png"
-              alt=""
-            />
-          </div>
-          <!-- Desktop Modal -->
-          <div
-            class="hidden lg:grid lg:gap-4 lg:grid-cols-5 lg:grid-rows-4 lg:pl-4"
-          >
-            <div class="lg:col-span-4">
-              <h1 class="lg:text-6xl font-bold text-white">
-                Одно приложение, множество возможностей!
-              </h1>
-            </div>
-            <div class="lg:col-span-1 lg:grid lg:justify-end lg:p-4">
-              <img
-                id="xBtnDesk"
-                class="hover:cursor-pointer"
-                src="/img/x-btn.svg"
-                alt=""
-              />
-            </div>
-            <div class="lg:row-span-3 lg:flex lg:items-center">
-              <img src="/img/phones_header.png" alt="" />
-            </div>
-            <div class="lg:col-span-4">
-              <span class="text-white font-bold lg:text-4xl"
-                >Мобильное приложение
-                <span class="text-green-400">EasyLife</span> с принципом
-                <span class="text-green-400">одного окна</span> делает жизнь
-                легче. Вся необходимая информация на экране вашего
-                телефона</span
-              >
-            </div>
-            <div class="lg:col-span-2 lg:row-span-2 lg:w-1/2">
-              <div class="flex flex-col justify-around">
-                <a
-                  href="https://apps.apple.com/kz/app/easylife-turkiye/id1671635384"
-                  target="_blank"
-                  ><img
-                    class="lg:mb-2"
-                    src="/img/DownLoadAppstoreBtn.png"
-                    alt=""
-                /></a>
+        </div>
 
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.easy_life.easy_life"
-                  target="_blank"
-                  ><img src="/img//DownLoadGooglePlayBtn.png" alt=""
-                /></a>
-              </div>
-            </div>
-            <div class="lg:col-span-2 lg:row-span-2 lg:flex lg:justify-center">
-              <img
-                class="w-48 h-36 sm:w-72 sm:h-64 md:w-80 md:h-auto"
-                src="/img/modal-image.png"
-                alt=""
-              />
-            </div>
-          </div>
+        <div class="flex justify-between px-2 lg:w-1/2 lg:h-auto">
+          <img
+            class="w-auto h-36 sm:w-72 sm:h-64 md:w-80 md:h-72 lg:h-auto"
+            src="/img/phones_header.png"
+            alt="Телефоны"
+          />
+          <img
+            class="w-48 h-36 sm:w-72 sm:h-64 md:w-80 md:h-auto lg:"
+            src="/img/modal-image.png"
+            alt="Пожилая пара"
+          />
         </div>
       </div>
-      <!-- MODAL WINDOW END -->
     </div>
 
+    <section class="w-full h-[3000px]"></section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

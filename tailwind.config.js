@@ -5,6 +5,8 @@ export default {
     extend: {
       colors: {
         customGreen: '#4DCC1D',
+        btnPurple: '#621280',
+        modalColor: '#884D9E',
       },
       fontFamily: {
         onest: ['onest', 'san-serif'],
